@@ -11,6 +11,8 @@ This is basic laravel tutorial
 setup .env file for database
 
 <pre>
+php artisan key:generate
+
 php artisan serve
 </pre>
 
