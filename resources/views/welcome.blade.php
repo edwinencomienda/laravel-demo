@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -91,5 +94,15 @@
                 </div>
             </div>
         </div>
+    
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        const form = {
+            first_name: 'arlie',
+            last_name: 'pamat awesome'
+        }
+        axios.delete('customers/4')
+    </script>
+
     </body>
 </html>
